@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Royal Enfield Website</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url("https://wallpapercave.com/wp/wp2616878.jpg") no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* Section container */
+    .container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .container h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Cards for models */
+    .card {
+      display: inline-block;
+      width: 250px;
+      margin: 20px;
+      padding: 15px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Gallery */
+    .gallery img {
+      width: 250px;
+      margin: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    form button {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #ffcc00;
+      color: black;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#models">Models</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div id="home" class="hero">
+    Royal Enfield - Made Like a Gun
+  </div>
+
+  <!-- About Section -->
+  <div class="container">
+    <h2>Welcome to Royal Enfield</h2>
+    <p>Royal Enfield is the oldest global motorcycle brand in continuous production since 1901. 
+    Known for its timeless design, strong build, and adventure spirit, RE bikes are loved worldwide
+    The first Royal Enfield motorcycle was built in 1901 by The Enfield Cycle Company of Redditch, Worcestershire, England, the company was responsible for the design and original production of the Royal Enfield Bullet, the longest-lived motorcycle design in history.[3] Licensed from the original English Royal Enfield by Madras Motors, the company is now a subsidiary of Eicher Motors, an Indian automaker.[4] The company makes classic-looking motorcycles including the Royal Enfield Bullet, Classic 350, Royal Enfield Thunderbird, Meteor 350, Classic 500, Interceptor 650, Continental, Hunter 350 and many more. Royal Enfield also makes adventurous and offroading motorcycles like the Royal Enfield Himalayan. Their motorcycles are equipped with single-cylinder and twin-cylinder engines.</p>
+  </div>
+
+  <!-- Models Section -->
+  <div id="models" class="container">
+    <h2>Popular Models</h2>
+    <div class="card">
+      <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/new-classic-350/studio-shots/new/stealth-black.png" alt="Classic 350">
+      <h3>Classic 350</h3>
+      <p>Timeless design with modern technology.</p>
+    </div>
+    <div class="card">
+      <img src="https://i2.wp.com/www.cbesprit.fr/wp-content/uploads/2018/02/himalayan-6.jpg?ssl=1" alt="Himalayan">
+      <h3>Himalayan</h3>
+      <p>Adventure tourer built for all terrains.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2022/08/Royal-Enfield-Hunter-350-dapper-white.jpg" alt="Meteor 350">
+      <h3>Meteor 350</h3>
+      <p>Perfect cruiser for long rides.</p>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <div id="gallery" class="container">
+    <h2>Royal Enfield Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/new-classic-350/studio-shots/new/stealth-black.png" alt="Royal Enfield">
+      <img src="https://i2.wp.com/www.cbesprit.fr/wp-content/uploads/2018/02/himalayan-6.jpg?ssl=1" alt="Royal Enfield">
+      <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2022/08/Royal-Enfield-Hunter-350-dapper-white.jpg" alt="Royal Enfield">
+      <img src="https://news.webike.net/wp-content/uploads/2023/10/1005_gt650BritishRacingGreen02_resulte.webp" alt="Royal Enfield">
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Royal Enfield Fan Website | Designed by Deepu 🚴‍♂️</p>
+  </footer>
+
+</body>
+</html>

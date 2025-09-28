@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple One-Page Website</title>
+  <style>
+    :root{--accent:#4f46e5;--bg:#f8fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;background:var(--bg);color:#0f172a;margin:0;padding:0}
+    header{background:linear-gradient(90deg,rgba(79,70,229,.06),transparent);padding:18px 20px}
+    .container{max-width:900px;margin:0 auto;padding:20px}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700;color:var(--accent);font-size:1.1rem}
+    nav a{margin-left:12px;text-decoration:none;color:#475569}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px 0}
+    .hero h1{font-size:1.7rem;margin:0}
+    .hero p{margin:6px 0 0;color:#475569}
+    .btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 14px rgba(2,6,23,.06)}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:18px}
+    .gallery img{width:100%;height:100px;object-fit:cover;border-radius:8px}
+    form{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 14px rgba(2,6,23,.04);margin-top:18px}
+    label{display:block;font-size:.9rem;margin-bottom:6px}
+    input,textarea{width:100%;padding:8px;border:1px solid #e6eef8;border-radius:8px}
+    footer{padding:18px 0;color:#64748b;font-size:.9rem;text-align:center;margin-top:26px}
+    @media(min-width:720px){.hero{grid-template-columns:1fr 320px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">MySimpleSite</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Welcome to your easy HTML website</h1>
+        <p>Create and edit this single file to build a small site. No build tools — just HTML, CSS and a little JavaScript.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Fast to edit</h3>
+            <p>Change text, images, or colors directly in this file.</p>
+          </div>
+          <div class="card">
+            <h3>Responsive</h3>
+            <p>Works on phones, tablets and desktops automatically.</p>
+          </div>
+          <div class="card">
+            <h3>Single file</h3>
+            <p>Copy this HTML into a file named <code>index.html</code> and open it in a browser.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="background:linear-gradient(180deg,rgba(79,70,229,.08),transparent);border-radius:12px;padding:14px">
+          <h3 style="margin-top:0">Quick preview</h3>
+          <p style="margin:0 0 10px;color:#475569">Try editing this file and refresh the page to see changes.</p>
+          <div class="gallery" id="gallery">
+            <img src="https://placehold.co/600x400?text=Image+1" alt="img1">
+            <img src="https://placehold.co/600x400?text=Image+2" alt="img2">
+            <img src="https://placehold.co/600x400?text=Image+3" alt="img3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About this site</h2>
+      <p style="color:#475569">This tiny site is meant as a starter template. You can add sections, change colors, or add links to social profiles.</p>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://placehold.co/300x200?text=1" alt="1">
+        <img src="https://placehold.co/300x200?text=2" alt="2">
+        <img src="https://placehold.co/300x200?text=3" alt="3">
+        <img src="https://placehold.co/300x200?text=4" alt="4">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form onsubmit="event.preventDefault();alert('Thanks! This form is for demo only.');">
+        <label for="name">Name</label>
+        <input id="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Write something..."></textarea>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </section>
+
+    <footer>
+      Built with ❤️ — copy this file and name it <code>index.html</code> to start.
+    </footer>
+  </main>
+</body>
+</html>
